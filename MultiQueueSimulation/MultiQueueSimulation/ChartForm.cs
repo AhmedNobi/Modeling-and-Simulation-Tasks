@@ -25,7 +25,7 @@ namespace MultiQueueSimulation
         private void LoadServer_Click(object sender, EventArgs e)
         {
             for (int i = 1; i <= SimTable.SimSys.NumberOfServers; i++)
-                ServersComboBox.Items.Add(i.ToString());
+                 ServersComboBox.Items.Add(i.ToString());
         }
 
         private void ServersComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -38,8 +38,8 @@ namespace MultiQueueSimulation
             int[] y = new int[ser.List_y.Count() + 5];
             for (int i = 0; i < ser.List_X.Count(); i++)
             {
-                x[i] = ser.List_X[i];
-                y[i] = ser.List_y[i];
+                 x[i] = ser.List_X[i];
+                 y[i] = ser.List_y[i];
             }
             series.Points.DataBindXY(x, y);
             ServerBusy.Series.Clear();
